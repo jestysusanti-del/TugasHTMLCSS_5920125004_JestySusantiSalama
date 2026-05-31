@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Images Rollovers and Sprites</title>
+    <style>
+      input {
+            font-size: 120%;
+            color: #5a5854;
+            background-color: #f2f2f2;
+            border: 1px solid #bdbdbd;
+            border-radius: 5px;
+            padding: 5px 5px 5px 30px;
+            background-repeat: no-repeat;
+            background-position: 8px 9px;
+            display: block;
+            margin-bottom: 10px;}
+      input.focus {
+            background-color: #ffffff;
+            border: 1px solid #b1e1e4;}
+       a.button {
+         height: 36px;
+         background-image: url("images/button-sprites.jpeg");
+         text-indent: -9999px;
+         display: inline-block;}
+        a#add-to-basket {
+         width: 174px;
+         background-position: 0px 0px;}
+        a#framing-options {
+         width: 210px;
+         background-position: -175px 0px;}
+        a#add-to-basket:hover {
+         background-position: 0px -40px;}
+        a#framing-options:hover {
+         background-position: -175px -40px;}
+        a#add-to-basket:active {
+         background-position: 0px -80px;}
+        a#framing-options:active {
+         background-position: -175px -80px;} 
+    </style>
+</head>
+<body>
+    <a class="button" id="add-to-basket">
+       Add to basket</a>
+    <a class="button" id="framing-options">
+       Framing options</a>
+</body>
+</html>
